@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>សិប្បកម្ម|សិល្បៈ</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../image/icon.png"/>
+		<link rel="stylesheet" href="../css/style.css"/> 
+        
+		<link rel="stylesheet" href="../css/nav.css"/> 
+		<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.css"/>
+		
+		<script src="../js/angular.min.js"></script>
+        <script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.min.js"> </script>
+		
+
+	</head>
+	<body>
+        <header class="container">
+			<div class="col-xs-4"> 
+				<div class="logo"><img src="../image/icon.png"/>   </div> 
+			</div>
+			<div class="col-xs-8">
+				<img src="../image/second.png" id="img"/>
+               
+			</div>
+		</header> 
+
+		<div class="handle">Menu</div>
+		<nav>
+			<ul >
+				<li> <a href="../index.html"> ទំព័រដើម</a> </li>
+                <li> <a href="Cambodia.html">កម្ពុជា</a> </li>
+                <li > <a href="Agriculture.html">កសិកម្ម</a> </li>
+				<li> <a href="food.html">ម្ហូប</a> </li>
+                <li> <a href="Culture&tranditional.html"> វប្បធម៌ & ប្រពៃណី </a> </li>
+                <li> <a href="Arts and crafts.html"> សិប្បកម្ម & សិល្បៈខ្មែរ</a> </li>
+                <li> <a href="About.html"> អំពីយើង</a> </li>
+			</ul>
+		</nav>
+     <div ng-app="" ng-init="names=[
+        {
+            product:'Huawei',
+            image:'../image/Ren_Zhengfei.jpg',
+            name:'Ren Zhengfei',
+            major:'ជនជាតិចិន',
+            born:'(១៩៤៤-បច្ចុប្បន្ន)',
+            link: 'inventor-huawei.html'
+        },
+        {
+            product:'Iphone',
+            image:'../image/Steav Job.jpg',
+            name:'Steav Job',
+            major:'ជនជាតិអាមេរិក',
+            born:'(១៩៥៥-បច្ចប្បន្ន)',
+            link: 'inventor-iphone.html'
+        },
+        {
+            product:'Nokia',
+            image:'../image/Fredrik_Idestam.png',
+            name:'Knut Fredrik Idestam',
+            major:'ជនជាតិហ្វាំឡង់',
+            born:'(១៨៣៨-១៩១៦)',
+            link: 'inventor-Nokia.html'
+        },
+        {
+            product:'Sony',
+            image:'../image/Akio Morita.jpg',
+            name:'Akio Morita',
+            major:'ជនជាតិជប៉ុន',
+            born:'(១៩២១-១៩៩៩)',
+            link: 'inventor-sony(A).html'
+        },
+        {
+            product:'Sony',
+            image:'../image/Masaru-ibuka.jpg',
+            name:'Masaru Ibuka',
+            major:'ជនជាតិជប៉ុន',
+            born:'(១៩០៨-១៩៩៧)',
+            link: 'inventor-sony(M).html'
+        },
+        {
+            product:'Samsung',
+            image:'../image/Lee Byung-chul.jpg',
+            name:'Lee Byung-chul',
+            major:'ជនជាតិកូរ៉េ',
+            born:'(១៩១០-១៩៨៧)',
+            link: 'inventor-samsung.html'
+        }
+      ]">
+	<div class="content container">
+		<div id="paper" style="background:white; margin:20px;">
+      <ul ng-repeat="x in names" style="text-align:center; list-style-type:none; display:inline-table;" >
+            <li id="name"> {{x.product}} </li>
+            <li> <img src="{{x.image}}" id="imgv" style="border:0"/></li>
+            <li style="margin-top:5px;">{{x.name}} </li>
+            <li>  {{x.major}} </li>
+            <li> {{x.born}} </li>
+            <li>  <a href="{{x.link}}" class="other"> ពត៏មានបន្ថែម </a> </li>
+     </ul>
+  </div>
+  </div>
+      
+      
+    </div>
+        <div class="navbar-fixed-bottom">
+            <footer>
+              <p class="text-center" style="background-color:#633;color:white">ក្រុមទី៥</p>
+            </footer>
+        </div>
+	</div>
+</body>
+</html>

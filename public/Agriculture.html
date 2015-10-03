@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>កសិកម្ម</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="../image/icon.png"/>
+		<link rel="stylesheet" href="../css/style.css"/> 
+        
+		<link rel="stylesheet" href="../css/nav.css"/> 
+		<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="../css/bootstrap.css"/>
+		
+		<script src="../js/angular.min.js"></script>
+        <script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.min.js"> </script>
+		
+
+	</head>
+	<body>
+        <header class="container">
+			<div class="col-xs-4"> 
+				<div class="logo"><img src="../image/icon.png"/>   </div> 
+			</div>
+			<div class="col-xs-8">
+				<img src="../image/second.png" id="img"/>
+               
+			</div>
+		</header> 
+                 
+ 
+		
+		<div class="handle">Menu</div>
+		<nav>
+			<ul >
+				<li> <a href="../index.html"> ទំព័រដើម</a> </li>
+                <li> <a href="Cambodia.html">កម្ពុជា</a> </li>
+                <li > <a href="Agriculture.html">កសិកម្ម</a> </li>
+				<li> <a href="food.html">ម្ហូប</a> </li>
+                <li> <a href="Culture&tranditional.html"> វប្បធម៌ & ប្រពៃណី </a> </li>
+                <li> <a href="Arts and crafts.html"> សិប្បកម្ម & សិល្បៈខ្មែរ</a> </li>
+                <li> <a href="About.html"> អំពីយើង</a> </li>
+			</ul>
+		</nav>
+     <div ng-app="" ng-init="names=[
+        {
+        title:'ជំរាបសួរ',
+        image:'../image/Chumreap Suor.jpg',
+        content:'ប្រជាជនកម្ពុជា តែងតែប្រកាន់យក និងគោរពយ៉ាងខ្ជាប់ខ្ជួន នូវប្រពៃណីវប្បធម៌ នៅក្នុងជីវិតរស់នៅ ប្រចាំថ្ងៃរបស់ខ្លួន។ ភ្ញៀវទេសចរណ៍បរទេសទាំងឡាយនឹងបានឃើញនូវកាយវិការប្រកបដោយភាពថ្លៃថ្នូររបស់ប្រជាជាតិកម្ពុជាដែល បង្ហាញនូវការ ស្វាគមន៍យ៉ាងទន់ភ្លន់ តាមរយៈការ ជម្រាបសួរ នៅពេលដែលពួកគេបានជួបនរណាម្នាក់។ប្រជាជនកម្ពុជាតែងតែស្វាគមន៍...',
+        link: 'Culture&tranditional_Detail.html'
+    },
+    {
+        title:'របាំប្រពៃណី',
+        image:'../image/cambodia-dance-022.3.jpg',
+        content:'ប្រជាជាតិកម្ពុជា មានរបាំប្រពៃណីជាច្រីន ដូចជារបាំអប្សារា ដែលត្រូវបានគេដឹងថាជាទម្រង់ សិល្បៈ កម្រិតខ្ពស់មួយរបស់ព្រះរាជា ហើយរបាំនេះក៏ជ្រើសរើសតែសិល្បការិនីមកសមែ្តងផង ដែរ។
+ជាដំបូងទម្រង់នៃរបាំនេះត្រូវបានគេនំយកទៅសម្តែងនៅបរទេស ហើយក៏ត្រូវបានទទួលនូវភាព ល្បីល្បាញនៅក្នុងទសវត្សឆ្នាំ ១៩៦០ ថាជារបាំ...',
+        link: 'Culture&tranditional_Detail.html'
+    },
+    {
+        title:'ក្បាច់គុនបុរាណខ្មែរ(សិល្បៈនៃការធ្វើសឹកសង្រ្គាម)',
+        image:'../image/Bokator-Khmer-Fight.jpg',
+        content:'សិល្បៈនៃការធ្វើសឹកសង្រ្គាម ត្រូវបានគេដឹងថា មានអាយុកាលជាងមួយពាន់ឆ្នាំមកហើយ។ ដោយមានភស្តុតាងជាច្រើន បានបញ្ជាក់បានតាមរយៈរូបចម្លាក់នៅប្រាសាទអង្គវត្ត។ ក្បាច់គុណ បុរាណខ្មែរមានច្រើនប្រភេទ ដូចជា ល្បុក្កតោ បោកចំបាប់ ក្បាច់គុណដំបងវែង...',
+        link: 'Culture&tranditional_Detail.html'
+    },
+    {
+        title:'រៀបអាពាហ៍ពិពាហ៍',
+        image:'../image/cambodia-wedding.jpg',
+        content:'ប្រពៃណីនៃការរៀបអាពាហ៍ពិពាហ៌ខ្មែរ គឺជាកិច្ចការមួយដ៏សំខាន់ ជាខ្លាំងដោយក្នុងនោះ មានការរៀបចំពិធីបែប សាសនា ជាច្រើនហើយមាន រយៈពេល៣ថ្ងែ៣យប់។ ការរៀបអាពាហ៍ ពិពាហ៍បានចាប់ផ្តើមនៅពេល កូនកំលោះ និងក្រុមគ្រួសាររបស់គេហែរជំនួនទៅផ្ទះកូនក្រមុំជា ចំណងដៃភ្ជាប់ស្ពានមេត្រីភាពផ្សាសាច់ឈាម នឹងគ្នា។ហើយក្នុងពេលនោះ ...',
+        link: 'Culture&tranditional_Detail.html'
+    },
+    {
+       title:'ឱសថបុរាណ',
+        image:'../image/Traditional Medicine3.jpg',
+        content:'ឱសថបុរាណខ្មែរ គឺជារូបមន្តនៃការព្យាបាលរោគតាមបែបបធម្មជាតិដោយប្រើប្រាស់ថ្នាំកែរោគ មានដូចជា ឬសឈើ សំបកឈើ ស្លឹកឈើ និងតិណទេស ដើម្បីព្យាបាលរោគ ក្នុងខ្លួនឲបាន ជាសះស្បើយ។ប្រជាជនខ្មែរ បានប្រើប្រាស់ឳសថបុរាណសម្រាប់ព្យាបាលជម្ងឺ ជាច្រើនមុខអស់រយៈពេលជា ច្រើនឆ្នាំ មកហើយ ហើយដែលរូបមន្តនៃការ ផ្សំ...',
+        link: 'Culture&tranditional_Detail.html'
+    }
+  ]">
+	<div class="content container">
+		<div id="paper" style="background:white; margin:20px;margin-top:55px; color:#006;">
+        <h1 style="font-family:'Khmer OS Muol Light';color:#030;">វប្បធម៌& ប្រពៃណី</h1>
+      <p>ឆ្លងកាត់តាមប្រវត្តិសាស្រ្តជាច្រើនសតវត្សរ៍ បានបង្ហាញថា ប្រទេសកម្ពុជា ជាប្រជាជាតិមួយដែល មានប្រពៃណី និងវប្បធម៌ សម្បូរបែប។ ហើយឆ្លងកាត់រយៈពេលជាច្រើនឆ្នាំមកនេះប្រជាជនកម្ពុជាក៏បានបង្កើតប្រពៃណីទំនៀមទម្លាប់ជាតិខ្លួនតាមរយៈ ការទទួលឥទ្ធិពល ពុទ្ធសាសនា និងព្រហ្មញ្ញសាសនា នៅក្នុងប្រទេស។
+</p>
+       <ul class="row" style="list-style-type:none">
+        <li ng-repeat="x in names" style="margin-left:2%";>
+            <div class="col-xs-12 text-left" style="font-size:20px; font-weight:900; padding-bottom:15px; padding-top:5px; "> {{x.title}} </div>
+            <div class="col-xs-10 col-sm-2" style="float:left; display: inline; margin-bottom:5px;"> <img src="{{x.image}}" style="width:100px; height:100px;"/></div>
+            <div class="col-xs-10 col-sm-10"> <div style="text-align:justify; border: 1px solid black; margin-bottom:10px; padding:5px; margin-right:5%; word-wrap: break-word;"> {{x.content}} <div><a href="{{x.link}}" class="other"> អានបន្ត </a> </div></div> </div>
+   
+        </li>
+     </ul>
+  </div>
+  </div>
+      
+      
+    </div>
+        <div class="navbar-fixed-bottom">
+            <footer>
+              <p class="text-center" style="background-color:#633;color:white">ក្រុមទី៥</p>
+            </footer>
+        </div>
+	</div>
+</body>
+</html>

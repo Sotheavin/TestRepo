@@ -1,0 +1,186 @@
+body{
+	width: 100%;
+	overflow-x:hidden;
+	margin:0 !important;
+	padding:0 !important;
+}
+
+#name{
+	font-weight:900;
+	font-family:"Khmer OS Bokor", "Khmer OS Muol Light"; 
+	font-size:30px;
+	color:#930;
+}
+#sub_Nav{
+	list-style-type:none;
+	padding:30px;
+	font-size:15px;
+	
+}
+#sub_Navlist{
+	border:1px groove #963; 
+	padding:10px; 
+}
+#sub_Navlist a:hover{
+	color:#0FF;
+}
+#content{
+	margin-top:2%;
+}
+
+p{
+	text-align: justify; 
+	word-break: break-all; 
+	line-height: 250%; 
+	color: #7f7f8f;
+}
+
+.logo img{
+	width:15em;
+	padding:0; 	
+	height:11em; 
+}
+
+.tealBG{
+	background-color:#568b8c;
+}
+
+.other{
+	color:blue;
+}
+
+.strongtealBG{
+	background-color:#0CF;
+}
+.weaktealBG{
+	background-color:#006666;
+}
+
+.wallleft{
+	border-left:2px #FFFFFF solid;
+}
+
+.wallright{
+	border-right:2px #FFFFFF solid;
+	display:none;
+}
+  
+.content{
+	margin-left:7.5%;
+	margin-bottom: 5%;
+}
+
+#na{
+	padding:0px;
+	margin:0px;
+}
+
+#left{
+	border:groove;
+	color:#003;
+	margin-top:10px;
+	padding:10px;
+}
+
+#right{
+	border:groove;
+	background-color:#CCC;
+	color:#003;
+	margin-top:10px;
+	padding:10px;
+}
+
+#imgs{
+	width:100%;
+	height:200px;
+	top:0;
+	visibility: hidden;
+	display: none;	
+}
+
+#imgv{
+	border: 1px solid black;
+	padding-top: 7px;
+	width:165px;
+	height:180px;
+}
+
+#container1{
+	padding:0; 
+	height:23.3em;
+}
+
+footer{
+	height: 40px; 
+	background-color:#00795f; 
+}
+
+footer p{
+	 color:white;
+	 padding:5px;
+}
+
+#img{
+	width:100%;
+	padding:0; 	
+	height:11em; 
+}
+
+#tech-slideshow {
+    position: relative;
+    overflow: hidden;
+    margin-left: 12%;
+}
+#tech-slideshow > div {
+    width: 2790px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: moveSlideshow 15s linear infinite;
+    -moz-animation:    moveSlideshow 15s linear infinite;   
+}
+
+@-webkit-keyframes moveSlideshow {
+    0% { left: 0; }
+    100% { left: -1684px; }
+}
+@-moz-keyframes moveSlideshow {
+    0% { left: 0; }
+    100% { left: -1684px; }
+}
+
+@media screen and (max-width: 650px){
+	/* make menu override navgation*/
+
+	#container1{
+        height:10em;
+    }
+
+    #name{
+		font-weight:900; 
+		font-size:20px;
+	}
+
+	.content{
+		margin-bottom: 10%;
+	}
+
+	#img{
+		width:80%;
+		height: 7em;
+	}
+
+	.logo img{
+		width:10em;
+		height: 7em;
+	}
+
+}
+
+@media screen and (max-width:460px){
+	#img{
+		width:80%;
+		height: 7em;
+		margin-left: 33%;
+	}
+}
